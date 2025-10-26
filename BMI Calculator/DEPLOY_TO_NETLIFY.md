@@ -43,3 +43,26 @@ Notes:
 
 - If you see a directory listing or a 404, confirm the publish directory is `BMI Calculator` (case-sensitive on the host).
 - If you add a build step in the future, set the build command in `netlify.toml` or in the site settings.
+
+## Automated GitHub Actions deploy (optional)
+
+You can enable automatic deploys from GitHub using the included workflow file `.github/workflows/deploy-netlify.yml`. It will run on pushes to `main` and deploy the `BMI Calculator` folder.
+
+Required repository secrets (add these in your GitHub repo Settings → Secrets & variables → Actions):
+
+- `NETLIFY_AUTH_TOKEN` — a Personal Access Token generated from your Netlify account.
+	- Create a token at https://app.netlify.com/user/applications#personal-access-tokens (or via your Netlify user settings -> Applications).
+- `NETLIFY_SITE_ID` — the Netlify Site ID for your site.
+	- You can find the Site ID in your Netlify site dashboard under Site settings → General → Site details, or by running `netlify status` from the CLI after linking the site.
+
+When those secrets are set, any push to `main` will trigger the workflow and deploy the site.
+
+## How to verify the GitHub Actions run
+
+1. Push a change to the `main` branch.
+2. Open the repository's Actions tab and look for the "Deploy to Netlify" workflow run.
+3. Click into the run and view logs; the `Deploy to Netlify` step will show the Netlify CLI output and the deployed URL.
+4. Visit the deployed URL from the logs or check your Netlify site dashboard to confirm the updated content.
+
+If the workflow fails, check that both secrets are correct and that the `NETLIFY_SITE_ID` matches the site you're trying to update.
+

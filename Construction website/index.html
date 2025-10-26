@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Строителни услуги — Ремонт и строеж</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Професионални строителни и ремонтни услуги — обзавеждане, реконструкции, довършителни работи.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">СтройРемонт</a>
+      <button id="nav-toggle" aria-label="Отвори менюто">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">За нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#pricing">Цени</a>
+        <a href="#reviews">Отзиви</a>
+        <a href="#news">Новини</a>
+        <a href="brochures/offer.pdf" class="btn-brochure" download title="Свали брошура">Брошура (PDF)</a>
+        <a href="#contact" class="btn-contact">Контакт</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div>
+          <h1>Професионално строителство и ремонти</h1>
+          <p class="lead">От проекта до ключ — надеждни майстори, прозрачни цени и гарантирано качество.</p>
+          <p>
+            <a href="#contact" class="btn primary">Получете оферта</a>
+            <a href="#services" class="btn secondary">Нашите услуги</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- placeholder image area -->
+        </div>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <h2>За нас</h2>
+      <p>Ние сме екип от опитни строители и ремонтни специалисти с над 10 години опит. Работим с качествени материали и предлагаме индивидуален подход към всеки проект — от малък ремонт до пълна реконструкция.</p>
+    </section>
+
+    <section class="services container" id="services">
+      <h2>Услуги</h2>
+      <div class="grid services-grid">
+        <article class="card">
+          <h3><img class="icon-img" src="images/icons/hammer.svg" alt=""> Общи ремонти</h3>
+          <p>Довършителни работи, боя, шпакловка, подови настилки и подмяна на електро и ВиК мрежи.</p>
+        </article>
+        <article class="card">
+          <h3><img class="icon-img" src="images/icons/building.svg" alt=""> Реконструкции</h3>
+          <p>Прекрояване на пространства, зидария, носещи конструкции и комплексни решения.</p>
+        </article>
+        <article class="card">
+          <h3><img class="icon-img" src="images/icons/bath.svg" alt=""> Бани и кухни</h3>
+          <p>Монтаж на плочки, санитария, мебели по проект и хидроизолации.</p>
+        </article>
+        <article class="card">
+          <h3><img class="icon-img" src="images/icons/house.svg" alt=""> Външни работи</h3>
+          <p>Фасади, външни настилки, огради и малки архитектурни форми.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing container" id="pricing">
+      <h2>Цени</h2>
+      <p class="muted">Примерни пакети — финалната цена се определя след оглед и уточняване на материалите.</p>
+      <div class="grid pricing-grid">
+        <div class="price-card">
+          <h3>Базов ремонт</h3>
+          <p class="price">от 250 лв/м²</p>
+          <ul>
+            <li>Шпакловка и боядисване</li>
+            <li>Основни електро и ВиК поправки</li>
+            <li>До 2 стаи</li>
+          </ul>
+        </div>
+        <div class="price-card recommended">
+          <h3>Стандарт</h3>
+          <p class="price">от 350 лв/м²</p>
+          <ul>
+            <li>Подови настилки</li>
+            <li>Баня или кухня частичен ремонт</li>
+            <li>Среден избор материали</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Пълен пакет</h3>
+          <p class="price">от 500 лв/м²</p>
+          <ul>
+            <li>Пълна реконструкция</li>
+            <li>Висок клас материали</li>
+            <li>Проектен и строителен надзор</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews container" id="reviews">
+      <h2>Отзиви от клиенти</h2>
+      <div class="reviews-wrap">
+        <div id="reviews-list" class="reviews-list">
+          <blockquote class="review active">
+            <p>„Професионален екип, спазиха сроковете и бюджета. Препоръчваме!“</p>
+            <cite>— Иван П.</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>„Качествено изпълнение на банята. Отлична комуникация.“</p>
+            <cite>— Мария Д.</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>„Стабилна фирма — коректни и чисти работници. Ще ползваме отново услугите им."</p>
+            <cite>— Георги К.</cite>
+          </blockquote>
+        </div>
+        <div class="reviews-controls">
+          <button id="prev-review" aria-label="Предишен отзив">‹</button>
+          <button id="next-review" aria-label="Следващ отзив">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="news container" id="news">
+      <h2>Новини</h2>
+      <ul class="news-list">
+        <li>
+          <h4>Ново завършен проект — 3-стаен апартамент</h4>
+          <p class="muted">10 октомври 2025</p>
+          <p>Завършихме пълна реконструкция на апартамент — от покриване на стени до фини детайли.</p>
+        </li>
+        <li>
+          <h4>Стартираме сезонни отстъпки за външни ремонти</h4>
+          <p class="muted">1 септември 2025</p>
+          <p>Специални условия за фасадни работи през есента.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="gallery container" id="gallery">
+      <h2>Галерия</h2>
+      <p class="muted">Някои от нашите завършени проекти — кликнете върху изображение за по-голям преглед.</p>
+      <div class="gallery-grid">
+        <button class="gallery-item" data-src="images/project1.svg" aria-label="Преглед проект 1">
+          <img src="images/project1.svg" alt="Проект 1">
+        </button>
+        <button class="gallery-item" data-src="images/project2.svg" aria-label="Преглед проект 2">
+          <img src="images/project2.svg" alt="Проект 2">
+        </button>
+        <button class="gallery-item" data-src="images/project3.svg" aria-label="Преглед проект 3">
+          <img src="images/project3.svg" alt="Проект 3">
+        </button>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <h2>Контакт</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" method="post" action="/api/contact">
+          <label>Име<input type="text" name="name" required></label>
+          <label>Телефон<input type="tel" name="phone"></label>
+          <label>Имейл<input type="email" name="email"></label>
+          <label>Съобщение<textarea name="message" rows="4"></textarea></label>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          <button class="btn primary" type="submit">Изпрати</button>
+        </form>
+        <div class="contact-info">
+          <p><strong>Тел.:</strong> +359 88 123 4567</p>
+          <p><strong>Имейл:</strong> info@stroyremont.example</p>
+          <p><strong>Адрес:</strong> гр. София, ул. Пример 10</p>
+          <p>Работно време: Пн–Пт 8:00–18:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> СтройРемонт — Всички права запазени</p>
+    </div>
+  </footer>
+
+  <script>
+    // UI: mobile nav
+    const nav = document.getElementById('site-nav');
+    const toggle = document.getElementById('nav-toggle');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const href = this.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+          nav.classList.remove('open');
+        }
+      });
+    });
+
+    // Simple reviews carousel
+    (function(){
+      const reviews = document.querySelectorAll('.review');
+      let idx = 0;
+      const show = (i) => {
+        reviews.forEach(r=>r.classList.remove('active'));
+        reviews[i].classList.add('active');
+      };
+      document.getElementById('prev-review').addEventListener('click', ()=>{ idx = (idx-1+reviews.length)%reviews.length; show(idx); });
+      document.getElementById('next-review').addEventListener('click', ()=>{ idx = (idx+1)%reviews.length; show(idx); });
+      setInterval(()=>{ idx=(idx+1)%reviews.length; show(idx); }, 6000);
+    })();
+
+    // Gallery lightbox (dynamic)
+    (function(){
+      const createLightbox = () => {
+        const lb = document.createElement('div');
+        lb.className = 'lightbox';
+        lb.innerHTML = `
+          <div class="lightbox-inner">
+            <button class="lightbox-close" aria-label="Затвори">×</button>
+            <img src="" alt="" />
+            <p class="lightbox-caption"></p>
+          </div>`;
+        document.body.appendChild(lb);
+        return lb;
+      };
+
+      const lightbox = createLightbox();
+      const lbImg = lightbox.querySelector('img');
+      const lbCaption = lightbox.querySelector('.lightbox-caption');
+      const closeBtn = lightbox.querySelector('.lightbox-close');
+
+      function openLightbox(src, caption){
+        lbImg.src = src;
+        lbImg.alt = caption || '';
+        lbCaption.textContent = caption || '';
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+      }
+      function closeLightbox(){
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lbImg.src = '';
+      }
+
+      document.querySelectorAll('.gallery-item').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const src = btn.getAttribute('data-src');
+          const caption = btn.querySelector('img')?.alt || '';
+          openLightbox(src, caption);
+        });
+      });
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e)=>{ if(e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeLightbox(); });
+    })();
+
+    // Scroll reveal (IntersectionObserver)
+    (function(){
+      const items = document.querySelectorAll('.card, .price-card, .review, .gallery-item, .hero-inner');
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('reveal');
+            io.unobserve(entry.target);
+          }
+        });
+      },{threshold:0.12});
+      items.forEach(i=>io.observe(i));
+    })();
+
+      // Contact form: submit via fetch to server
+    (function(){
+      const form = document.getElementById('contact-form');
+      const statusEl = document.getElementById('form-status');
+      form.addEventListener('submit', async (e)=>{
+        e.preventDefault();
+        statusEl.textContent = 'Изпращане...';
+        const data = Object.fromEntries(new FormData(form).entries());
+        try{
+          const res = await fetch(form.action, {
+            method: 'POST',
+            headers: {'Content-Type':'application/json'},
+            body: JSON.stringify(data)
+          });
+          const json = await res.json();
+          if(res.ok && json.success){
+            statusEl.textContent = 'Благодарим! Вашето съобщение е получено.';
+            form.reset();
+          } else {
+            statusEl.textContent = json.error || 'Възникна грешка при изпращане.';
+          }
+        }catch(err){
+          console.error(err);
+          statusEl.textContent = 'Грешка при свързване със сървъра.';
+        }
+      });
+    })();
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

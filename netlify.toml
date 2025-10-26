@@ -1,0 +1,3 @@
+[build]
+  # Publish directory for Netlify. This points Netlify to the static site folder in this repo.
+  publish = "BMI Calculator"

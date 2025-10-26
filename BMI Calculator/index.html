@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1>BMI Calculator</h1>
+
+      <form id="bmi-form" class="card" novalidate>
+        <div class="row">
+          <label for="age">Age</label>
+          <input id="age" name="age" type="number" min="0" max="130" placeholder="e.g. 28">
+        </div>
+
+        <div class="row">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="unspecified">Unspecified</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label for="height">Height (cm)</label>
+          <input id="height" name="height" type="number" min="30" max="300" placeholder="e.g. 170" required>
+        </div>
+
+        <div class="row">
+          <label for="weight">Weight (kg)</label>
+          <input id="weight" name="weight" type="number" min="2" max="500" placeholder="e.g. 65" required>
+        </div>
+
+        <div class="actions">
+          <button type="submit" id="calculate">Calculate BMI</button>
+          <button type="button" id="reset">Reset</button>
+        </div>
+      </form>
+
+      <section id="result" class="card hidden" aria-live="polite">
+        <h2>Result</h2>
+        <div class="summary">
+          <div class="bmi-value" id="bmi-value">--</div>
+          <div class="bmi-category" id="bmi-category">
+            <span class="category-text">Enter your details and press Calculate</span>
+            <span class="badge" id="bmi-badge" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="weight-info">
+          <div id="weight-range" class="weight-range">&nbsp;</div>
+        </div>
+
+        <div class="visualization">
+          <div class="gauge-wrapper">
+            <svg id="bmi-gauge" viewBox="0 0 300 300" role="img" aria-label="BMI gauge">
+              <!-- four colored arcs across the top semicircle -->
+              <path class="arc underweight" d="M40 150 A110 110 0 0 1 72.22 227.78" fill="none" stroke-width="24" stroke-linecap="round"/>
+              <path class="arc normal" d="M72.22 227.78 A110 110 0 0 1 150 260" fill="none" stroke-width="24" stroke-linecap="round"/>
+              <path class="arc overweight" d="M150 260 A110 110 0 0 1 227.78 227.78" fill="none" stroke-width="24" stroke-linecap="round"/>
+              <path class="arc obese" d="M227.78 227.78 A110 110 0 0 1 260 150" fill="none" stroke-width="24" stroke-linecap="round"/>
+
+              <!-- needle group: rotate this group around center 150,150 -->
+              <g id="gauge-needle" transform="rotate(-180 150 150)">
+                <line x1="150" y1="150" x2="150" y2="60" class="needle" stroke="#0f172a" stroke-width="4" stroke-linecap="round" />
+                <circle cx="150" cy="150" r="6" fill="#0f172a" />
+              </g>
+            </svg>
+          </div>
+
+          <div id="category-icon" class="category-icon" aria-hidden="true">🙂</div>
+        </div>
+
+        <p class="note" id="note">BMI is a screening tool and doesn't measure body composition. For personalized advice consult a healthcare professional.</p>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
